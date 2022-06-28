@@ -28,6 +28,7 @@ const routes = [
       {
         path: '/my',
         component: MyPage
+
       }
     ]
   },

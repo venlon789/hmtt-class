@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- 上面的登录导航 -->
-    <van-nav-bar title="标题">
+    <van-nav-bar title="标题" @click-left="$router.back()">
       <template v-slot:left>
-        <van-icon name="cross" />
+        <van-icon name="cross"  />
       </template>
     </van-nav-bar>
     <van-form @submit="onSubmit" ref="loginFrom">
@@ -90,6 +90,7 @@ export default {
         const res = await loginApi(values)
         this.$store.commit('setUser', res.data.data)
         console.log(res)
+        this.$router.push('/my')
       } catch (err) {
         console.log(err)
       }
