@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+<div>
+    搜索组件
+</div>
 </template>
 
 <script>
 export default {
-  created () { },
+  created () {},
   data () {
     return {}
   },
