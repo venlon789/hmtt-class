@@ -29,16 +29,21 @@ const routes = [
         path: '/my',
         component: MyPage
 
-      },
-      {
-        path: '/search',
-        component: () => import('@/views/SearchPage')
       }
     ]
   },
   {
     path: '/login',
     component: LoginPage
+  },
+  {
+    path: '/search',
+    component: () => import('@/views/SearchPage')
+  }, {
+    path: '/article/:article_id',
+    name: 'article',
+    component: () => import('@/views/Article'),
+    props: true
   }
 ]
 const router = new VueRouter({

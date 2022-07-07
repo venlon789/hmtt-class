@@ -2,7 +2,7 @@
   <div>
     <van-nav-bar fixed>
       <template v-slot:title>
-        <van-button type="info" icon="search" class="search-btn"
+        <van-button type="info" icon="search" class="search-btn" to="/search"
           >搜索</van-button
         >
       </template>
